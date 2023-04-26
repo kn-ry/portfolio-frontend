@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, Group, Stack, Text, Title } from '@mantine/core';
+import { Group, Text, Title } from '@mantine/core';
 import { FC, ReactNode } from 'react';
 
 type TextWithSubtitleProps = {

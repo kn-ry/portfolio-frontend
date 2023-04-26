@@ -1,24 +1,49 @@
 import { Text } from '@/components/ui/Text/Text';
-import { ActionIcon, Box, Group, Image, Stack } from '@mantine/core';
-import { SiGithub } from 'react-icons/si';
+import { Box, Group, Image, Stack } from '@mantine/core';
+import { FC } from 'react';
 
-export const AboutMePresenter = () => {
+type AboutMePresenterProps = {};
+
+export const AboutMePresenter: FC<AboutMePresenterProps> = (props) => {
+  const {} = props;
   const myInfo = {
     name: 'Ryunosuke Kono',
-    picture: 'https://avatars.githubusercontent.com/u/55564581?v=4',
-    description:
-      '説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。',
+    picture: './images/selfie.jpg',
+    description: (
+      <>
+        <p>
+          横浜市在住の大学生。
+          <br />
+          慶應義塾大学・環境情報学部の学部２年生です。
+        </p>
+        大学入学と同時期にエンジニアとしてインターンを始め、TypeScript,
+        Next.jsを中心にフロントエンドの業務を担当していました。
+        <br />
+        現在はUI/UXデザインの領域にも注力。Figmaを使用したUI作成やデザインシステムの構築、プロダクトの要件定義など幅広くサービス開発に携わっています。
+      </>
+    ),
   };
-  const { name, picture, description } = myInfo;
   return (
     <div>
-      <Group position="center" align="flex-start" spacing="xl" py={80}>
-        <Image maw={128} radius="md" src={picture} alt="image" />
-        <Stack w="30%">
-          <Text size="xl">{name}</Text>
-          <Text size="md">{description}</Text>
+      <Stack align="center" spacing="xl" py={56}>
+        <Stack align={'center'} spacing="xs">
+          <Box
+            sx={{
+              overflow: 'hidden',
+              borderRadius: 9999,
+              border: '2px solid #DEE2E6',
+            }}
+          >
+            <Image maw={128} radius={9999} src={myInfo.picture} alt="image" />
+          </Box>
+          <Text size="xl" color={'gray'}>
+            {myInfo.name}
+          </Text>
         </Stack>
-      </Group>
+        <Stack w={'50%'} maw={650} align="center">
+          <Text size="md">{myInfo.description}</Text>
+        </Stack>
+      </Stack>
     </div>
   );
 };

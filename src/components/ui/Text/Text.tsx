@@ -12,7 +12,15 @@ type TextProps = {
 };
 
 export const Text: FC<TextProps> = (props) => {
-  const { size, color, weight, inline, inherit, align, children } = props;
+  const {
+    size,
+    color = 'gray.9',
+    inline,
+    inherit,
+    align,
+    weight,
+    children,
+  } = props;
   return (
     <MText
       size={size}

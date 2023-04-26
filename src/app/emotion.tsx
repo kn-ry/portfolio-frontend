@@ -22,7 +22,13 @@ export default function RootStyleRegistry({
 
   return (
     <CacheProvider value={cache}>
-      <MantineProvider withGlobalStyles withNormalizeCSS>
+      <MantineProvider
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          fontFamily: 'Comic Sans MS',
+        }}
+      >
         {children}
       </MantineProvider>
     </CacheProvider>
