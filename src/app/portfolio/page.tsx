@@ -5,17 +5,20 @@ import { SkillAndWorks } from '@/components/aggregations/sections/SkillAndWorks'
 import { MyTimeline } from '@/components/aggregations/sections/Timeline';
 import { Section } from '@/components/templates/Section/Section';
 import { TextWithSubtitle } from '@/components/ui/TextWithSubtitle';
+import { RxHamburgerMenu } from 'react-icons/rx';
 import {
   ActionIcon,
   Anchor,
   Button,
+  Drawer,
   Footer,
   Group,
   Header,
+  MediaQuery,
   Stack,
   Text,
 } from '@mantine/core';
-import { useScrollIntoView } from '@mantine/hooks';
+import { useDisclosure, useScrollIntoView } from '@mantine/hooks';
 import { createRef, useRef } from 'react';
 import {
   IoChevronDownCircleOutline,
@@ -31,9 +34,39 @@ const PortfolioPage = () => {
   const scrollIntoView = (id: number) => {
     pageRef.current[id].current?.scrollIntoView({ behavior: 'smooth' });
   };
-
+  const [opened, { open, close }] = useDisclosure(false);
   return (
     <>
+      <Drawer
+        opened={opened}
+        onClose={close}
+        withCloseButton={false}
+        size="50%"
+      >
+        <Stack align={'center'} spacing={0}>
+          <Anchor
+            onClick={() => {
+              window.scroll({ top: 0, behavior: 'smooth' });
+            }}
+            size="lg"
+            color="cyan.8"
+            h={56}
+          >
+            トップ
+          </Anchor>
+          {items.map((item, id) => (
+            <Anchor
+              onClick={() => scrollIntoView(id)}
+              size="lg"
+              key={id}
+              color="cyan.8"
+              h={56}
+            >
+              {item}
+            </Anchor>
+          ))}
+        </Stack>
+      </Drawer>
       <Header
         height={64}
         sx={{ opacity: 0.8 }}
@@ -50,21 +83,30 @@ const PortfolioPage = () => {
             }}
           >
             <Text size="lg" h="flex" color={'cyan.8'}>
-              myportfolio
+              my portfolio
             </Text>
           </Group>
-          <Group h={'flex'} spacing="xl">
-            {items.map((item, id) => (
-              <Anchor
-                onClick={() => scrollIntoView(id)}
-                size="lg"
-                key={id}
-                color="cyan.8"
-              >
-                {item}
-              </Anchor>
-            ))}
-          </Group>
+          <MediaQuery largerThan={'md'} styles={{ display: 'none' }}>
+            <Group h={'flex'}>
+              <ActionIcon color="cyan" onClick={open} h={'flex'}>
+                <RxHamburgerMenu size={'md'} />
+              </ActionIcon>
+            </Group>
+          </MediaQuery>
+          <MediaQuery smallerThan={'md'} styles={{ display: 'none' }}>
+            <Group h={'flex'} spacing="xl">
+              {items.map((item, id) => (
+                <Anchor
+                  onClick={() => scrollIntoView(id)}
+                  size="lg"
+                  key={id}
+                  color="cyan.8"
+                >
+                  {item}
+                </Anchor>
+              ))}
+            </Group>
+          </MediaQuery>
         </div>
       </Header>
       <div>

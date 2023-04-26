@@ -23,12 +23,14 @@ export const SkillAndWorksPresenter: FC<SkillAndWorksPresenterProps> = (
   const largeScreen = useMediaQuery('(min-width: 60em)');
   return (
     <>
-      {/* <MediaQuery largerThan={'sm'} styles={{ display: 'none' }}>
-        <Stack align="center" px={0} my={64}>
-          <SkillList />
-          <WorksList />
-        </Stack>
-      </MediaQuery>*/}
+      <MediaQuery largerThan={'md'} styles={{ display: 'none' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Stack align="stretch" w="80%">
+            <SkillList />
+            <WorksList />
+          </Stack>
+        </Box>
+      </MediaQuery>
       <MediaQuery smallerThan={'md'} styles={{ display: 'none' }}>
         <Box
           // bg={'red'}

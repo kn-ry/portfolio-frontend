@@ -34,7 +34,7 @@ export const AboutMePresenter: FC<AboutMePresenterProps> = (props) => {
               border: '2px solid #DEE2E6',
             }}
           >
-            <Image maw={128} radius={9999} src={myInfo.picture} alt="image" />
+            <Image maw={196} radius={9999} src={myInfo.picture} alt="image" />
           </Box>
           <Text size="xl" color={'gray'}>
             {myInfo.name}
