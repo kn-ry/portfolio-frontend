@@ -26,7 +26,10 @@ export default function RootStyleRegistry({
         withGlobalStyles
         withNormalizeCSS
         theme={{
-          fontFamily: 'Comic Sans MS',
+          fontFamily: 'Comic Sans MS, Hiragino Maru Gothic ProN',
+          // headings: {
+          //   fontFamily: 'Comic Sans MS, Hiragino Maru Gothic ProN',
+          // },
         }}
       >
         {children}
