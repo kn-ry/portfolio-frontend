@@ -1,14 +1,6 @@
 'use client';
 
-import {
-  Box,
-  Center,
-  Grid,
-  Group,
-  MediaQuery,
-  Stack,
-  Text,
-} from '@mantine/core';
+import { Box, Grid, MediaQuery, Stack } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { FC } from 'react';
 import { SkillList } from '../../SkillList';

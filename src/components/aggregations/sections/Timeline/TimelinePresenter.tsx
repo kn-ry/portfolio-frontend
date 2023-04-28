@@ -64,7 +64,11 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
                     <FaRegCommentDots size={24} color="#868E96" />
                     <Text color={'gray.8'}>
                       「マンドリンってなーに？」という方へ、
-                      <a target="_blank" href={'https://kzo.me/mandolin/'}>
+                      <a
+                        target="_blank"
+                        href={'https://kzo.me/mandolin/'}
+                        className=" text-[#15AABF]"
+                      >
                         こちら
                       </a>
                       の記事がおすすめです ^_^
@@ -86,6 +90,13 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
             title="慶應義塾大学入学"
             term="4年間"
             subtitle="環境情報学部 (SFC)"
+            description={
+              <Text>
+                授業や研究内容はとっても楽しいです。
+                <br />
+                立地だけはちょっと、、
+              </Text>
+            }
           />
         </Timeline.Item>
         <Timeline.Item

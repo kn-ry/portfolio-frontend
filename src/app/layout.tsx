@@ -1,6 +1,6 @@
 'use client';
 import './globals.css';
-import { AppShell, Box, Button, Group, Header, Text } from '@mantine/core';
+import { AppShell } from '@mantine/core';
 import RootStyleRegistry from './emotion';
 
 export default function RootLayout({
@@ -10,7 +10,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <head />
+      <head>
+        <title>こーのフォリオ</title>
+      </head>
       <body>
         <RootStyleRegistry>
           <AppShell padding={0}>{children}</AppShell>

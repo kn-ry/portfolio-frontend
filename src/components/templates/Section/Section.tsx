@@ -21,9 +21,7 @@ export const Section: FC<SectionProps> = ({
       <Stack mih={256} align="center" justify="flex-end" pt={56}>
         <Title size={48}>{sectionTitle}</Title>
         <Box w={'50%'}>
-          <Text size="md" align="center">
-            {description}
-          </Text>
+          <Text size="md">{description}</Text>
         </Box>
       </Stack>
       {children}

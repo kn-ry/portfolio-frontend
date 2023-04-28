@@ -37,13 +37,13 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
             このポートフォリオサイトです。Next.jsを使用し、１枚のLP風のサイトにしました。
           </p>
           <p>
-            とりあえず急いで作成したため、現時点では簡素なデザインになっています。
+            とりあえず形になるものを、と作成したため現時点ではかなり簡素なデザインになっています。
             <br />
-            Three.jsやGSAPなど今後取り入れたい技術がまだまだあるので、これからもっと楽しいページになると思います！
+            Three.jsやGSAPでのアニメーションなどなど今後取り入れたい技術がまだまだあるので、これからもっと楽しいページになると思います！
           </p>
         </>
       ),
-      images: [],
+      images: ['./images/portfolio/portfolio1.jpeg'],
     },
     {
       title: 'マーケティングSaaS',
@@ -52,6 +52,8 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
         <>
           <p>
             Cookieレス時代に対応した新しいマーケティング支援ツールの開発を進めています。
+            <br />
+            スタートアップのメンバーとして、プロダクトの要件定義からUI/UXデザイン、フロントエンド開発までを担当しています。
           </p>
           <p>
             開発言語(フロント)：NextJS / TypeScript / GraphQL
@@ -61,7 +63,7 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
           </p>
         </>
       ),
-      images: [],
+      images: ['./images/marketing/marketing.jpeg'],
     },
   ];
   return (

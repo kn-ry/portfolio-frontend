@@ -83,7 +83,7 @@ const PortfolioPage = () => {
             }}
           >
             <Text size="lg" h="flex" color={'cyan.8'}>
-              my portfolio
+              Kono-folio
             </Text>
           </Group>
           <MediaQuery largerThan={'md'} styles={{ display: 'none' }}>
@@ -126,7 +126,11 @@ const PortfolioPage = () => {
           description={
             <>
               <p>
-                今後はフロントエンドの技術に加え、エンジニアとデザイナーの架け橋となれる存在を目指しています。
+                フロントエンド開発からUI/UXデザインまで幅広く対応できることが強みです。
+                <br />
+                その一方で、まだ経験が浅いこともあり専門性の低さを感じているため、日々キャッチアップに努めてます。
+                <br />
+                今後はよりUI/UXに関する経験を積み、専門性を高めていきたいと考えています。
               </p>
               <p>＊スキルは業務で実際に使用した技術のみ掲載しております。</p>
             </>
@@ -139,7 +143,9 @@ const PortfolioPage = () => {
         <Section
           sectionTitle="profile"
           bg="white"
-          description="短いですが、私の経歴をご紹介します"
+          description={
+            <Text align="center">まだ短いですが、私の経歴をご紹介します！</Text>
+          }
         >
           <MyTimeline />
         </Section>

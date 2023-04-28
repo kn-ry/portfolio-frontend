@@ -25,13 +25,15 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
         withCloseButton={false}
         padding={0}
       >
-        <Card w={'full'}>
-          <Card.Section mb={16}>
-            {images.length !== 0 && (
+        <Card>
+          <Card.Section>
+            {images.length === 1 ? (
+              <Image src={images} />
+            ) : (
               <Carousel
                 withIndicators
                 loop
-                // slideSize={'70%'}
+                slideSize={'90%'}
                 // slideGap="md"
                 // bg={'cyan'}
                 // maw={500}
@@ -40,14 +42,14 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
               >
                 {images.map((image: string) => (
                   <Carousel.Slide key={image}>
-                    <Image src={image} fit="cover" />
+                    <Image src={image} />
                   </Carousel.Slide>
                 ))}
               </Carousel>
             )}
           </Card.Section>
 
-          <div className="px-6">
+          <div className="p-6">
             <Text color={'gray'} size="sm">
               {subtitle}
             </Text>
