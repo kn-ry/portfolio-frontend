@@ -1,22 +1,11 @@
 'use client';
 
-import {
-  Avatar,
-  Box,
-  Card,
-  Center,
-  Group,
-  Header,
-  Stack,
-  Text,
-  Timeline,
-  Title,
-} from '@mantine/core';
+import { Card, Center, Group, Timeline } from '@mantine/core';
 import { FC } from 'react';
 import { TimelineContent } from '../../TimelineContents';
 import { FaSchool, FaLaptopCode, FaRegCommentDots } from 'react-icons/fa';
 import { IoSchool } from 'react-icons/io5';
-import Link from 'next/link';
+import { Text } from '@/components/ui/Text/Text';
 
 type TimelinePresenterProps = {};
 

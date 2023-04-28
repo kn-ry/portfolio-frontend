@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Button, Card, Group, Image, Modal, Stack, Title } from '@mantine/core';
+import { Button, Card, Group, Image, Modal, Title } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import { Text } from '../Text/Text';
 import { useDisclosure } from '@mantine/hooks';

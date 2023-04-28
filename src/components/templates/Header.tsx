@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { Group, Header as MHeader, Text } from '@mantine/core';
+import { Group, Header as MHeader } from '@mantine/core';
+import { Text } from '../ui/Text/Text';
 type HeaderProps = {};
 
 export const Header: FC<HeaderProps> = (props) => {

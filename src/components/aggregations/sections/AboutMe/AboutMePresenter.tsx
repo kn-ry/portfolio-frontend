@@ -1,5 +1,5 @@
 import { Text } from '@/components/ui/Text/Text';
-import { Box, Group, Image, Stack } from '@mantine/core';
+import { Box, Image, Stack } from '@mantine/core';
 import { FC } from 'react';
 
 type AboutMePresenterProps = {};

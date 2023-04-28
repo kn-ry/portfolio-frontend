@@ -9,6 +9,7 @@ type TextProps = {
   inherit?: boolean;
   align?: CSSProperties['textAlign'];
   children: React.ReactNode;
+  h?: any;
 };
 
 export const Text: FC<TextProps> = (props) => {
@@ -20,9 +21,11 @@ export const Text: FC<TextProps> = (props) => {
     align,
     weight,
     children,
+    h,
   } = props;
   return (
     <MText
+      h={h}
       size={size}
       color={color}
       weight={weight}

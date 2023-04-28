@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Avatar, Card, Group, Image } from '@mantine/core';
+import { Avatar, Card, Group } from '@mantine/core';
 import { Text } from '../Text/Text';
 
 type SkillCardProps = {

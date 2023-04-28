@@ -1,4 +1,5 @@
-import { Group, Stack, Text, Title } from '@mantine/core';
+import { Text } from '@/components/ui/Text/Text';
+import { Group, Stack, Title } from '@mantine/core';
 import { FC } from 'react';
 
 type TimelineContentPresenterProps = {

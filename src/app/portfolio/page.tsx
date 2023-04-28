@@ -16,7 +16,7 @@ import {
   Header,
   MediaQuery,
   Stack,
-  Text,
+  Title,
 } from '@mantine/core';
 import { useDisclosure, useScrollIntoView } from '@mantine/hooks';
 import { createRef, useRef } from 'react';
@@ -24,6 +24,7 @@ import {
   IoChevronDownCircleOutline,
   IoChevronUpCircleOutline,
 } from 'react-icons/io5';
+import { Text } from '@/components/ui/Text/Text';
 
 const PortfolioPage = () => {
   // const { scrollIntoView, targetAboutMe } = useScrollIntoView<HTMLDivElement>();
@@ -163,9 +164,9 @@ const PortfolioPage = () => {
           >
             <IoChevronUpCircleOutline size={48} strokeWidth={0.5} />
           </ActionIcon>
-          <Text size={32} weight="bold" color={'cyan'}>
+          <Title order={1} weight="bold" color={'cyan'}>
             Thank you for coming!
-          </Text>
+          </Title>
         </Stack>
       </div>
     </>
