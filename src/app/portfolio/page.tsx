@@ -29,7 +29,7 @@ import { Text } from '@/components/ui/Text/Text';
 const PortfolioPage = () => {
   // const { scrollIntoView, targetAboutMe } = useScrollIntoView<HTMLDivElement>();
   // const onClickScroll = () => scrollIntoView({ alignment: 'center' });
-  const items = ['About me', 'Skill & Works', 'Profile'];
+  const items = ['About me', 'Skills & Works', 'Profile'];
 
   const pageRef = useRef(items.map(() => createRef<HTMLDivElement>()));
   const scrollIntoView = (id: number) => {
@@ -122,7 +122,7 @@ const PortfolioPage = () => {
       </div>
       <div ref={pageRef.current[1]}>
         <Section
-          sectionTitle="Skill & Work"
+          sectionTitle=" Skills & Works"
           bg={'white'}
           description={
             <>

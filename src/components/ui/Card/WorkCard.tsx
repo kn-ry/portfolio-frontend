@@ -24,6 +24,7 @@ export const WorkCard: FC<WorkCardProps> = (props) => {
         size={'45rem'}
         withCloseButton={false}
         padding={0}
+        radius={'md'}
       >
         <Card>
           <Card.Section>

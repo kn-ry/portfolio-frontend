@@ -17,7 +17,7 @@ export const AboutMePresenter: FC<AboutMePresenterProps> = (props) => {
           慶應義塾大学・環境情報学部の学部２年生です。
         </p>
         大学入学と同時期にエンジニアとしてインターンを始め、TypeScript,
-        Next.jsを中心にフロントエンドの業務を担当していました。
+        Next.jsを中心にフロントエンドの開発業務を担当していました。
         <br />
         現在はUI/UXデザインの領域にも注力。Figmaを使用したUI作成やデザインシステムの構築、プロダクトの要件定義など幅広くサービス開発に携わっています。
       </>

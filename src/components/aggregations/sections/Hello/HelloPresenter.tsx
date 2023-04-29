@@ -14,7 +14,7 @@ export const HelloPresenter: FC<HelloPresenterProps> = ({ onClick }) => {
           <Title size={48} color="cyan">
             Kouno's Portfolio
           </Title>
-          <Title size={24}>web enginner & UI UX desinger</Title>
+          <Title size={24}>web enginner & UI/UX desinger</Title>
         </Stack>
         <ActionIcon
           color={'gray.4'}

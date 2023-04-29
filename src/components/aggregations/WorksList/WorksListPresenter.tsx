@@ -20,7 +20,7 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
             apiを使ったレシピの検索および閲覧機能を備えたアプリです。
           </p>
           <p>
-            開発言語(フロント)React / TypeScript
+            開発言語(フロント)：React / TypeScript
             <br />
             スタイリング/UI：Chakra UI <br />
           </p>
@@ -44,7 +44,7 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
           <p>
             とりあえず形になるものを、と作成したため現時点ではかなり簡素なデザインになっています。
             <br />
-            Three.jsやGSAPでのアニメーションなどなど今後取り入れたい技術がまだまだあるので、これからもっと楽しいページになると思います！
+            Three.jsやGSAPでのアニメーションなど今後取り入れたい技術がまだまだあるので、これからもっと楽しいページになると思います！
           </p>
         </>
       ),
@@ -61,7 +61,7 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
             スタートアップのメンバーとして、プロダクトの要件定義からUI/UXデザイン、フロントエンド開発までを担当しています。
           </p>
           <p>
-            開発言語(フロント)：NextJS / TypeScript / GraphQL
+            開発言語(フロント)：Next.js / TypeScript / GraphQL
             <br />
             スタイリング/UI：Tailwind CSS / Mantine <br />
             デザイン：Figma
