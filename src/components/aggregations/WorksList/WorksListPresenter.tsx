@@ -16,9 +16,14 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
         <>
           <p>
             学習の過程として、主にReact,
-            TypeScriptを使ったwebアプリケーションを作成しました。
+            TypeScriptを使ったwebアプリケーションを作成しました。 web
+            apiを使ったレシピの検索および閲覧機能を備えたアプリです。
           </p>
-          <p>web apiを使ったレシピの検索および閲覧機能を備えたアプリです</p>
+          <p>
+            開発言語(フロント)React / TypeScript
+            <br />
+            スタイリング/UI：Chakra UI <br />
+          </p>
         </>
       ),
       images: [
