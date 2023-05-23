@@ -12,7 +12,7 @@ export const HelloPresenter: FC<HelloPresenterProps> = ({ onClick }) => {
       <Stack align="center" spacing="5.5rem">
         <Stack align="center">
           <Title size={48} color="cyan">
-            Kouno's Portfolio
+            Kono's Portfolio
           </Title>
           <Title size={24}>web enginner & UI/UX desinger</Title>
         </Stack>
