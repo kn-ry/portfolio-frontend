@@ -33,7 +33,7 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
       ],
     },
     {
-      title: "Kouno's Portfolio",
+      title: "Kono's Portfolio",
       subtitle: '個人開発・2023年4月',
       body: (
         <>
