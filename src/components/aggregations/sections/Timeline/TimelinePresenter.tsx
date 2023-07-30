@@ -108,6 +108,8 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
             subtitle="フロントエンドエンジニア・UI/UXデザイナー"
             description={
               <Text>
+                自社サービスの開発を行っています。
+                <br />
                 プロダクトの要件定義からデザイン、フロントエンド開発まで幅広く担当しています。
                 <br />
                 初期メンバーとして、マーケティングSaaSのリリースに向けて尽力しています！
@@ -126,6 +128,8 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
             subtitle="デザインエンジニア"
             description={
               <Text>
+                受託開発の業務を行っています。
+                <br />
                 デザインエンジニアとしてモバイルアプリのデザイン、開発業務を担当しています。
               </Text>
             }
