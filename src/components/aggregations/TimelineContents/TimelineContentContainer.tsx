@@ -4,7 +4,7 @@ import { TimelineContentPresenter } from './TimelineContentPresenter';
 type TimelineContentContainerProps = {
   title: string;
   subtitle?: string;
-  term: string;
+  term: JSX.Element | string;
   description?: JSX.Element | string;
 };
 

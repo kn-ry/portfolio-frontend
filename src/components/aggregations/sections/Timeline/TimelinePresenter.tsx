@@ -100,7 +100,7 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
           />
         </Timeline.Item>
         <Timeline.Item
-          title={<TimelineStartDate startDate={'2022年9月〜'} />}
+          title={<TimelineStartDate startDate={'2022年9月〜現在'} />}
           bullet={<FaLaptopCode size={20} radius="xl" />}
         >
           <TimelineContent
@@ -114,7 +114,22 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
                 <br />
               </Text>
             }
-            term="4ヶ月"
+            term={<Text color={'cyan'}>now!!</Text>}
+          />
+        </Timeline.Item>
+        <Timeline.Item
+          title={<TimelineStartDate startDate={'2023年7月〜現在'} />}
+          bullet={<FaLaptopCode size={20} radius="xl" />}
+        >
+          <TimelineContent
+            title="株式会社 ispec"
+            subtitle="デザインエンジニア"
+            description={
+              <Text>
+                デザインエンジニアとしてモバイルアプリのデザイン、開発業務を担当しています。
+              </Text>
+            }
+            term={<Text color={'cyan'}>now!!</Text>}
           />
         </Timeline.Item>
       </Timeline>

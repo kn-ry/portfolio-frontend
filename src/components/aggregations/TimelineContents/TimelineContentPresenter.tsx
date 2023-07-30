@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 type TimelineContentPresenterProps = {
   title: string;
-  term: string;
+  term: JSX.Element | string;
   subtitle?: string;
   description?: JSX.Element | string;
 };
