@@ -23,6 +23,8 @@ export const AboutMePresenter: FC<AboutMePresenterProps> = (props) => {
         sentense 1 sentense 2
         <br />
         sentense 1
+        <br />
+        sentense 2
       </>
     ),
   };
