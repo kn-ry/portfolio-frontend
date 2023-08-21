@@ -20,7 +20,7 @@ export const AboutMePresenter: FC<AboutMePresenterProps> = (props) => {
         Next.jsを中心にフロントエンドの開発業務を担当していました。
         <br />
         現在はUI/UXデザインの領域にも注力。Figmaを使用したUI作成やデザインシステムの構築、プロダクトの要件定義など幅広くサービス開発に携わっています。
-        sentense 1
+        sentense 1 sentense 2
       </>
     ),
   };
