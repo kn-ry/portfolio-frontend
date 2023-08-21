@@ -22,7 +22,7 @@ export const AboutMePresenter: FC<AboutMePresenterProps> = (props) => {
         現在はUI/UXデザインの領域にも注力。Figmaを使用したUI作成やデザインシステムの構築、プロダクトの要件定義など幅広くサービス開発に携わっています。
         sentense 1 sentense 2
         <br />
-        sentense 1
+        sentense 1, sentense 1'
         <br />
         sentense 2
       </>
