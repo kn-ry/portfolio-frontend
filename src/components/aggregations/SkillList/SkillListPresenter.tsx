@@ -39,7 +39,8 @@ export const SkillListPresenter: FC<SkillListPresenterProps> = (props) => {
       subtitle: '3years',
       icon: './images/figma.png',
     },
-    { title: 'Flutter', subtitle: '1month', icon: './images/flutter.png' },
+    { title: 'Flutter', subtitle: '8month', icon: './images/flutter.png' },
+    { title: 'bubble', subtitle: '1month', icon: './images/bubble.png' },
   ];
   return (
     <>

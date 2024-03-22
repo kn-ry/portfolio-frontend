@@ -69,6 +69,40 @@ export const WorksListPresenter: FC<WorksListPresenterProps> = (props) => {
       ),
       images: ['./images/marketing/marketing.jpeg'],
     },
+    {
+      title: '医療領域を中心としたサービス・ツールの開発',
+      subtitle: '参画中・2023年7月~現在',
+      body: (
+        <>
+          <p>
+            医療・メンタルヘルスケア領域を中心とした開発支援を行うテックカンパニーでインターンのメンバーとして稼働しています。
+            <br />
+            様々なプロジェクトに参画し、フロントエンド開発やデザインを担当しています。
+          </p>
+          <p>
+            開発言語：Next.js / TypeScript / GraphQL / Bubble 他
+            <br />
+            デザイン：Figma
+          </p>
+        </>
+      ),
+      images: ['./images/ispec/medical-care.jpg'],
+    },
+    {
+      title: '技術系記事の発信',
+      subtitle: 'Zennにて',
+      link: 'https://zenn.dev/kn_ry',
+      body: (
+        <>
+          <p>
+            Zennで自分の扱う技術やアイデアに関する記事を執筆しています。
+            <br />
+            まだ数は少ないですが、これからも有益な情報を発信していきたいと考えています。
+          </p>
+        </>
+      ),
+      images: ['./images/zenn/zenn-image.png'],
+    },
   ];
   return (
     <>

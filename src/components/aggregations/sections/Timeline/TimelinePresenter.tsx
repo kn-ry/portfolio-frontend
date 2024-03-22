@@ -35,20 +35,22 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
     <Center>
       <Timeline m={64} bulletSize={30} color="cyan" active={4} lineWidth={3}>
         <Timeline.Item
-          title={<TimelineStartDate startDate={'2022年4月〜2022年7月'} />}
+          title={<TimelineStartDate startDate={'2019年4月〜2022年3月'} />}
           bullet={<FaSchool size={20} radius="xl" />}
         >
           <TimelineContent
             title="高校時代"
-            subtitle="部活動はマンドリンクラブに所属"
+            subtitle="部活動はオーケストラ系の部活に所属"
             description={
               <Text>
+                コントラバスを弾いていました。（今でも弾きます）
+                <br />
                 サボりながらではありましたが、ゆるゆると続けていました。
                 <br />
                 高校二年生のコロナ休校期間中に初めてプログラミングに触れ、
                 <br />
                 三年生の夏頃からweb開発の学習を始めました。
-                <Card radius={'md'} py={8} mt={4} shadow="md">
+                {/* <Card radius={'md'} py={8} mt={4} shadow="md">
                   <Group spacing={0}>
                     <FaRegCommentDots size={24} color="#868E96" />
                     <Text color={'gray.8'}>
@@ -63,16 +65,14 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
                       の記事がおすすめです ^_^
                     </Text>
                   </Group>
-                </Card>
+                </Card> */}
               </Text>
             }
             term="3年間"
           />
         </Timeline.Item>
         <Timeline.Item
-          title={
-            <TimelineStartDate startDate={'2022年4月〜2026年3月 (予定)'} />
-          }
+          title={<TimelineStartDate startDate={'2022年4月〜現在'} />}
           bullet={<IoSchool size={20} radius="xl" />}
         >
           <TimelineContent
@@ -83,7 +83,9 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
               <Text>
                 授業や研究内容はとっても楽しいです。
                 <br />
-                立地だけはちょっと、、
+                立地がアレなこともあり、だいたい車で通学しています。
+                <br />
+                そろそろ研究会にも入リたいな〜と思っています。
               </Text>
             }
           />
@@ -130,7 +132,7 @@ export const TimelinePresenter: FC<TimelinePresenterProps> = (props) => {
               <Text>
                 受託開発の業務を行っています。
                 <br />
-                デザインエンジニアとしてモバイルアプリのデザイン、開発業務を担当しています。
+                デザインエンジニアとしてモバイルアプリやwebサービスのデザイン、開発業務を担当しています。
               </Text>
             }
             term={<Text color={'cyan'}>now!!</Text>}
