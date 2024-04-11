@@ -14,7 +14,7 @@ export const AboutMePresenter: FC<AboutMePresenterProps> = (props) => {
         <p>
           横浜市在住の大学生。
           <br />
-          慶應義塾大学・環境情報学部の学部２年生です。
+          慶應義塾大学・環境情報学部の学部３年生です。
         </p>
         大学入学と同時期にエンジニアとしてインターンを始め、TypeScript,
         Next.jsを中心にフロントエンドの開発業務を担当していました。
